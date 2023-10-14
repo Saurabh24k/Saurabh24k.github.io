@@ -5,7 +5,7 @@ Chicago, Illinois 60616
 +1 (312)-404-1275  
 [srajput2@hawk.iit.edu](mailto:srajput2@hawk.iit.edu)  
 [LinkedIn](https://www.linkedin.com/in/saurabh-rajput-24k/)
-
+[GitHub](https://github.com/Saurabh24k)
 ---
 
 ### PROFESSIONAL EXPERIENCE
