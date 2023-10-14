@@ -1,13 +1,12 @@
 # SAURABH RAJPUT 
 ## AI Engineer
-
 251 W 31st St,  
 Chicago, Illinois 60616  
 +1 (312)-404-1275  
-
-[srajput2@hawk.iit.edu](mailto:srajput2@hawk.iit.edu)  
+[srajput2@hawk.iit.edu](mailto:srajput2@hawk.iit.edu) /
+[GitHub](https://github.com/Saurabh24k) /
 [LinkedIn](https://www.linkedin.com/in/saurabh-rajput-24k/)
-[GitHub](https://github.com/Saurabh24k)
+
 ---
 
 ### PROFESSIONAL EXPERIENCE
@@ -45,6 +44,7 @@ Chicago, Illinois 60616
 
 #### Diploma in Computer Engineering  
 *MGM Polytechnic, Chh. Sambhaji Nagar, Maharashtra (Jun 2015 - Mar 2018)*
+
 ---
 
 ### RESEARCH PUBLICATIONS
