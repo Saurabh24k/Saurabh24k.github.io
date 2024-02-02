@@ -17,10 +17,6 @@ Chicago, Illinois 60616
 - Fostered a collaborative environment, introducing advanced communication strategies that lowered problem escalation by 40% and increased first-call resolutions by 30%.
 - Boosted team efficiency by 20% and increased customer satisfaction ratings by 10% through targeted coaching and skill-building exercises.
 
-#### Artificial Intelligence Engineer  
-*Parkiez Technologies, Pune, MH, India (Sep 2018 - Dec 2020)*
-- Led a team of AI and full-stack developers in designing, testing, and deploying 11 machine learning and deep learning-based products.
-- Implemented agile project management methodologies, which streamlined workflows and minimized average project delivery timelines from 40 days to 34 days, significantly enhancing team efficiency and productivity.
 
 #### Tech Expert (Volunteer)  
 *UNLEASH - Innovation lab for SDG, [Remote] India (Jun 2021)*
