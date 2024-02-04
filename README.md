@@ -12,9 +12,12 @@ Chicago, Illinois 60616
 
 #### Artificial Intelligence Engineer  
 *Parkiez Mobility Pvt Ltd, Pune, MH, India (Dec 2020 - Mar 2022)*
-- Administered an 8-member team to develop an advanced Smart Parking System using machine learning techniques, enhancing security measures, and reducing operational costs.
-- Fostered a collaborative environment, introducing advanced communication strategies that lowered problem escalation by 40% and increased first-call resolutions by 30%.
-- Boosted team efficiency by 20% and increased customer satisfaction ratings by 10% through targeted coaching and skill-building exercises.
+- Led the development of an advanced Smart Parking System, leveraging machine learning for real-time optimization, utilizing Python, TensorFlow, and OpenCV for computer vision tasks.
+- Integrated AWS cloud services for scalable infrastructure management, enabling efficient data handling and processing.
+- Developed predictive analytics algorithms forecasting parking availability with high accuracy, employing Python and TensorFlow within
+AWS SageMaker for model training and deployment.
+- Orchestrated the adoption of DevOps practices, including continuous integration and delivery (CI/CD) with Jenkins and AWS
+CodePipeline, optimizing deployment processes.
 
 
 #### Tech Expert (Volunteer)  
