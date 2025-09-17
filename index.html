@@ -1,975 +1,373 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saurabh Rajput is a Chicago-based Artificial Intelligence Engineer building glassmorphic intelligent experiences across mobility, cybersecurity, and urban infrastructure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Saurabh Rajput — AI Engineer Portfolio</title>
+</head>
+<body data-theme="dark">
+    <div class="background-layers" aria-hidden="true">
+        <div class="gradient gradient--one"></div>
+        <div class="gradient gradient--two"></div>
+        <div class="gradient gradient--three"></div>
+        <div class="floating-orb floating-orb--one"></div>
+        <div class="floating-orb floating-orb--two"></div>
+        <div class="floating-orb floating-orb--three"></div>
+    </div>
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Sau24k</a>
 
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#home">Home</a></li>
+                    <li><a class="nav__link" href="#experience">Experience</a></li>
+                    <li><a class="nav__link" href="#projects">Projects</a></li>
+                    <li><a class="nav__link" href="#skills">Skills</a></li>
+                    <li><a class="nav__link" href="#education">Education</a></li>
+                    <li><a class="nav__link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation">
+                    <i class="uil uil-multiply"></i>
+                </button>
+            </div>
 
-        <title>Saurabh Rajput - Portfolio</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Sau24k.</a>
+            <div class="nav__actions">
+                <button class="nav__theme" id="theme-toggle" type="button" aria-label="Switch theme">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation">
+                    <i class="uil uil-apps"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                <i class="nav__icon">
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/cnpvyndp.json"
-                                    trigger="morph"
-                                    state="morph-home-2"
-                                    style="width:25px;height:25px">
-                                </lord-icon></i> Home
+    <main class="main">
+        <section class="hero section" id="home">
+            <div class="container hero__grid">
+                <div class="hero__content glass-panel reveal">
+                    <span class="hero__eyebrow">Artificial Intelligence Engineer</span>
+                    <h1 class="hero__title">Designing intelligent systems that amplify mobility, safety, and human experiences.</h1>
+                    <p class="hero__description">I’m Saurabh Rajput, a Chicago-based AI engineer translating research breakthroughs into resilient products. From smart parking ecosystems to anomaly detection pipelines, I architect cloud-native ML platforms that learn, adapt, and delight.</p>
 
-                            </a>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                <i class="nav__icon">
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/kthelypq.json"
-                                    trigger="hover"
-                                    style="width:25px;height:25px">
-                                </lord-icon></i> About
-                            </a>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                <i class="nav__icon">
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/rbbnmpcf.json"
-                                    trigger="hover"
-                                    style="width:25px;height:25px">
-                                </lord-icon></i> Skills
-                            </a>
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                <i class="nav__icon">
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/ppyvfomi.json"
-                                    trigger="hover"
-                                    style="width:25px;height:25px">
-                                </lord-icon></i> Projects
-                            </a>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                <i class="nav__icon">
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/fdxqrdfe.json"
-                                    trigger="hover"
-                                    style="width:25px;height:25px">
-                                </lord-icon></i> Contact
-                            </a>    
-                        </li>
-                    </ul>
-                    <i class="nav__close" id="nav-close">
-                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                        <lord-icon
-                            src="https://cdn.lordicon.com/nqtddedc.json"
-                            trigger="hover"
-                            style="width:25px;height:25px">
-                        </lord-icon></i>
-                </div>
-                <div class="nav__btns">
-                    <!-- Theme Button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/Saurabh24k" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github"></i>
-                            </a>
-                            <a href="mailto:srajput2@hawk.iit.edu" target="_blank" class="home__social-icon">
-                                <i class="uil uil-envelope-alt"></i>
-                            </a>
-                        </div>
-                        <div class="home__img">
-                            <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-
-                                    <image class="home__blob-img" x='12' y='5' href="assets/img/perfil.png"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Saurabh</h1>
-                            <h3 class="home__subtitle">Artificial Intelligence Engineer</h3>
-                            <p class="home__description">Exploring the world of AI and Machine Learning with a dash of creativity and a knack for problem-solving, I bring ideas to life, one innovative project at a time.</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="home__scroll-mouse">
-                                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                <lord-icon
-                                    src="https://cdn.lordicon.com/rmkahxvq.json"
-                                    trigger="hover"
-                                    style="width:20px;height:20px">
-                                </lord-icon></i>
-                            <span class="home__scroll-name">Scroll Down</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">Who I Am & What I Do</span>
-
-                <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">Diving into the AI world with a love for cracking codes and turning complex problems into simple solutions. 🚀 At Illinois Tech, I upped my game in machine learning and more, making tech smarter. My adventures include jazzing up parking with AI at Parkiez and more cool stuff. 🤖 Outside the geek zone, I'm all about making tech talk easy and fun. In short, I'm here to bring some AI magic into the real world, one project at a time! ✨</p>
-
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">10+</span>
-                                <span class="about__info-name">Completed <br> Projects </span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">3+</span>
-                                <span class="about__info-name">Years in <br> AI & Tech </span>
-                            </div>
-
-                            <div>
-                                <span class="about__info-title">2+</span>
-                                <span class="about__info-name">Research <br> Papers Published</span>
-                            </div>
-                            
-                            <div>
-                                <span class="about__info-title">1+</span>
-                                <span class="about__info-name">Year Leading <br> Tech Teams</span>
-                            </div>
-                        </div>
-                        <div class="about__buttons">
-                            <a download="" href="assets/pdf/Saurabh Rajput.pdf" class="button button--flex">
-                                Download Resume<i class="uil uil-file-download button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My Tech Toolkit</span>
-
-                <div class="skill__container container grid">
-                    <div>
-                        <!-- Languages -->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-                                <div>
-                                    <h2 class="skills__title">Languages</h2>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__number"> - 90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="c-plus-plus-logo"/>
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__number"> - 80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__cpp"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
-                                        <h3 class="skills__name">JAVA</h3>
-                                        <span class="skills__number"> - 70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__java"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- AI TechStack -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-robot skills__icon"></i>
-                                <div>
-                                    <h2 class="skills__title">AI & ML TechStack</h2>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/tensorflow.png" alt="tensorflow"/>
-                                        <h3 class="skills__name">TensorFlow</h3>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/material/24/000000/keras.png" alt="keras"/>
-                                        <h3 class="skills__name">Keras</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/fluency/48/pytorch.png" alt="pytorch"/>
-                                        <h3 class="skills__name">PyTorch</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/ios-filled/50/000000/graph.png" alt="graph"/>
-                                        <h3 class="skills__name">Matplotlib</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/opencv.png" alt="opencv"/>
-                                        <h3 class="skills__name">OpenCV</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/ios-filled/50/000000/python.png" alt="python"/>
-                                        <h3 class="skills__name">NLTK</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/emoji/48/hugging-face.png" alt="hugging-face"/>
-                                        <h3 class="skills__name">Hugging Face</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Data Analysis -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-graph-bar skills__icon"></i>
-                                <div>
-                                    <h2 class="skills__title">Data Analysis</h2>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/pandas.png" alt="pandas"/>
-                                        <h3 class="skills__name">Pandas</h3>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/numpy.png" alt="numpy"/>
-                                        <h3 class="skills__name">NumPy</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="assets/img/scikit-learn.svg" alt="Scikit-Learn"/>
-                                        <h3 class="skills__name">Scikit-Learn</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Web & Cloud Tech -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-cloud skills__icon"></i>
-                                <div>
-                                    <h2 class="skills__title">Web & Cloud Tech</h2>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/amazon-web-services.png" alt="amazon-web-services"/>
-                                        <h3 class="skills__name">AWS</h3>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/google-cloud.png" alt="google-cloud"/>
-                                        <h3 class="skills__name">Google Cloud Platform</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/color/48/git.png" alt="git"/>
-                                        <h3 class="skills__name">Git</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>
-                                        <h3 class="skills__name">Github</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/000000/react.png" alt="react"/>
-                                        <h3 class="skills__name">React</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/ios/50/flask.png" alt="flask"/>
-                                        <h3 class="skills__name">Flask</h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <img class="skills__icon" width="25" height="25" src="https://img.icons8.com/fluency/48/docker.png" alt="docker"/>
-                                        <h3 class="skills__name">Docker</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualifications</h2>
-                <span class="section__subtitle">My Journey</span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-                        <div class="qualification__button button--flex" data-target='#work'>
-                            <i class="uil uil-bag qualification__icon"></i>
-                            Work
-                        </div>
+                    <div class="hero__actions">
+                        <a href="#contact" class="button button--primary">Let’s build together</a>
+                        <a href="assets/pdf/Saurabh Rajput.pdf" class="button button--ghost" download>Download resume</a>
                     </div>
 
-                    <div class="qualification__sections">
-                        <!-- Education -->
-                        <div class="qualification__content qualification__active" data-content id="education">
-
-                            <!-- MGM Polytechnic -->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Diploma in Computer Engineering</h3>
-                                    <span class="qualification__subtitle">MGM Polytechnic</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2015 - 2018
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                            
-                            <!-- JSCOE -->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Bachelors in Computer Engineering</h3>
-                                    <span class="qualification__subtitle">Jayawantrao Sawant College of Engineering</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2018 - 2021
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!-- Illinos Tech -->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Masters in Artificial Intelligence</h3>
-                                    <span class="qualification__subtitle">Illinois Institute of Technology</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022 - 2024
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Work -->
-                        <div class="qualification__content" data-content id="work">
-                            <!-- Parkiez -->
-                            <div class="qualification__data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification__title">Parkiez Mobility Pvt Ltd.</h3>
-                                    <span class="qualification__subtitle">Artificial Intelligence Engineer</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2022
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Unleash -->
-                            <div class="qualification__data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">UNLEASH - Innovation lab for SDGs</h3>
-                                    <span class="qualification__subtitle">Expert - (Volunteer)</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - 2021
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!--==================== SERVICES ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">What I've worked on</span>
-                <div class="projects__container container grid">
-                    <!--==================== Project 1 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-parking-circle projects__icon"></i>
-                            <h3 class="projects__title">Smart <br> Parking System</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Smart <br> Parking System</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Employed TensorFlow for deep learning and OpenCV for real-time image processing, enhancing vehicle and license plate recognition accuracy.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Integrated OCR for efficient and accurate license plate text extraction, critical for vehicle identification.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Utilized Apache Kafka for real-time data streaming, ensuring timely processing of sensor and camera inputs.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Leveraged AWS/Google Cloud for scalable cloud computing and storage, facilitating robust data management.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Applied machine learning optimization techniques to fine-tune model performance, achieving high efficiency in varied conditions.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== Project 2 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-channel projects__icon"></i>
-                            <h3 class="projects__title">Network <br> Anomaly Detection</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Network <br> Anomaly Detection</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Utilized Scikit-Learn for machine learning model development, focusing on classification algorithms to identify network anomalies.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Applied statistical analysis and feature selection techniques to preprocess network traffic data, enhancing model accuracy.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Implemented decision trees and random forest algorithms for their effectiveness in detecting complex anomaly patterns.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Employed cross-validation and grid search for hyperparameter tuning, optimizing model performance.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Achieved a 95% detection rate of network anomalies, significantly improving cybersecurity measures.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== Project 3 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-traffic-light projects__icon"></i>
-                            <h3 class="projects__title">Traffic <br> Prediction Model</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Traffic <br> Prediction Model</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Combined Python for data manipulation and analysis with MATLAB for advanced traffic flow simulation, leveraging the strengths of both languages.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Employed machine learning techniques in Python to develop predictive models, focusing on time series analysis for traffic pattern forecasting.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Applied regression analysis and neural networks to predict traffic conditions, achieving an 88% predictive accuracy rate.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== Project 4 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-trees projects__icon"></i>
-                            <h3 class="projects__title">Environmental <br> Change Detection</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Environmental <br> Change Detection</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow to implement Convolutional Neural Networks (CNNs) for processing and analyzing satellite imagery.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Focused on feature extraction techniques to identify changes in land use, specifically targeting deforestation areas.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Enhanced CNN model architecture for improved spatial resolution handling, key to detecting subtle environmental changes.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Achieved an 87% improvement in detection accuracy for deforestation areas, contributing to more effective environmental monitoring.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== Project 5 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-newspaper projects__icon"></i>
-                            <h3 class="projects__title">Smart ATS <br> (Application Tracking System)</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Smart ATS <br> (Application Tracking System)</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Leveraged Large Language Models (LLM) and Natural Language Processing (NLP) in Python for advanced resume parsing and analysis.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Utilized Streamlit for developing an interactive web application, enabling efficient resume submission and processing.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Implemented semantic analysis and keyword extraction techniques to accurately match resumes with job descriptions.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Enhanced job match precision by 92%, significantly improving the effectiveness of the application tracking system.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== Project 6 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-diary projects__icon"></i>
-                            <h3 class="projects__title">Automated <br> Essay Scoring System</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Automated <br> Essay Scoring System</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Implemented the Natural Language Toolkit (NLTK) in Python for text processing and analysis in automated essay scoring.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Applied machine learning algorithms to develop a predictive model for essay grading, focusing on features like essay length, syntax complexity, and keyword relevance.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Utilized regression analysis and natural language processing techniques to evaluate and score essays based on predefined criteria.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== Project 7 ====================-->
-                    <div class="projects__content">
-                        <div>
-                            <i class="uil uil-focus-add projects__icon"></i>
-                            <h3 class="projects__title">Real-Time Object Detection <br> for Surveillance</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link projects__button">
-                            Details
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <div class="projects__modal">
-                            <div class="projects__modal-content">
-                                <h4 class="projects__modal-title">Real-Time Object Detection <br> for Surveillance</h4>
-                                <i class="uil uil-times projects__modal-close"></i>
-
-                                <ul class="projects__modal-projects grid">
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-one projects__modal-icon"></i>
-                                        <p>Implemented TensorFlow and Python on a Raspberry Pi for real-time object detection in a surveillance system.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-two projects__modal-icon"></i>
-                                        <p>Leveraged Google Colab for cloud-based data processing, enhancing computational power without overburdening local resources.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-three projects__modal-icon"></i>
-                                        <p>Utilized advanced object detection models to identify and flag unauthorized entries, focusing on accuracy and speed.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-four projects__modal-icon"></i>
-                                        <p>Achieved 93% accuracy in detecting unauthorized entries, significantly improving security measures.</p>
-                                    </li>
-                                    <li class="projects__modal-project">
-                                        <i class="uil uil-dice-five projects__modal-icon"></i>
-                                        <p>Integrated the system with notification services, enabling immediate alerts upon detection of unauthorized access.</p>
-                                    </li>
-                                    <!-- <li class="projects__modal-project">
-                                        <i class="uil uil-dice-six projects__modal-icon"></i>
-                                        <p>Utilized TensorFlow and OpenCV for an urban parking solution, incorporating OCR for license plate detection, significantly reducing urban traffic congestion.</p>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-envelope-alt contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <a href="mailto:saurabhrajput24k@gmail.com" class="contact__subtitle">saurabhrajput24k@gmail.com</a>
-                            </div>
-                        </div>
-
-                        
-                        <div class="contact__information">
-                            <i class="uil uil-twitter-alt contact__icon"></i>
-                            
-                            <div>
-                                <h3 class="contact__title">Twitter</h3>
-                                <a href="https://twitter.com/Saurabh24k" class="contact__subtitle" target="_blank">@Saurabh24k</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact__information">
-                            <i class="uil uil-linkedin-alt contact__icon"></i>
-                            
-                            <div>
-                                <h3 class="contact__title">Linkedin</h3>
-                                <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" class="contact__subtitle" target="_blank">Saurabh-Rajput-24k</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact__information">
-                            <i class="uil uil-map-pin contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <a href="https://www.google.com/maps/place/Chicago,+IL" class="contact__subtitle" target="_blank">Chicago - IL</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form action="" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Your Name</label>
-                                <input type="text" class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Your Email</label>
-                                <input type="email" class="contact__input">
-                            </div>
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-
-                        <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Sau24k</h1>
-                        <span class="footer__subtitle">Saurabh Rajput</span>
-                        <span class="footer__subtitle">AI Engineer</span>
-                    </div>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#projects" class="footer__link">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer__link">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="footer__socials">
-                        <a href="https://www.facebook.com/saurabh.rajput.182" target="_blank" class="footer__social">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/sau24k/" target="_blank" class="footer__social">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com/Saurabh24k" target="_blank" class="footer__social">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" target="_blank" class="footer__social">
+                    <div class="hero__social">
+                        <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                             <i class="uil uil-linkedin"></i>
                         </a>
+                        <a href="https://github.com/Saurabh24k" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="mailto:srajput2@hawk.iit.edu" aria-label="Email">
+                            <i class="uil uil-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-value">10+</span>
+                            <span class="hero__stat-label">End-to-end products and prototypes delivered</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-value">3+</span>
+                            <span class="hero__stat-label">Years building applied AI across mobility & cloud</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-value">2</span>
+                            <span class="hero__stat-label">Peer-reviewed publications on AI innovation</span>
+                        </div>
                     </div>
                 </div>
-                <p class="footer__copy">&#169; Sau24k. All rights reserved</p>
+
+                <div class="hero__media reveal">
+                    <div class="hero__media-glass glass-panel">
+                        <img src="assets/img/perfil.png" alt="Portrait of Saurabh Rajput" class="hero__portrait">
+                        <span class="hero__badge">
+                            <i class="uil uil-robot"></i>
+                            <span>ML Ops • Vision • NLP</span>
+                        </span>
+                    </div>
+                    <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
+                    <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
+                </div>
             </div>
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scrollup">
-            <i class="uil uil-angle-up scrollup__icon"></i>
-        </a>
+        </section>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section__heading">
+                    <span class="section__eyebrow">Journey</span>
+                    <h2 class="section__title">Experience</h2>
+                    <p class="section__description">Solving high-impact problems with scalable AI, human-centred design, and collaborative leadership.</p>
+                </div>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                <div class="experience__timeline">
+                    <article class="timeline-card glass-panel reveal">
+                        <div class="timeline-card__header">
+                            <h3>Artificial Intelligence Engineer</h3>
+                            <span class="timeline-card__company">Parkiez Mobility Pvt Ltd · Dec 2020 – Mar 2022</span>
+                            <span class="timeline-card__location">Pune, India · Hybrid</span>
+                        </div>
+                        <ul class="timeline-card__list">
+                            <li>Architected a smart parking intelligence suite powered by TensorFlow, OpenCV, and edge sensors, delivering live capacity forecasts for 30+ parking hubs.</li>
+                            <li>Orchestrated cloud-native deployments on AWS, automating pipelines with SageMaker, Lambda, and IoT Core to reduce operational overhead by 40%.</li>
+                            <li>Instituted CI/CD workflows with Jenkins and CodePipeline, accelerating experimentation cycles and production releases for the mobility platform.</li>
+                        </ul>
+                    </article>
+
+                    <article class="timeline-card glass-panel reveal">
+                        <div class="timeline-card__header">
+                            <h3>Tech Expert · Volunteer</h3>
+                            <span class="timeline-card__company">UNLEASH Innovation Lab for SDGs · Jun 2021</span>
+                            <span class="timeline-card__location">Remote · India</span>
+                        </div>
+                        <ul class="timeline-card__list">
+                            <li>Mentored hackathon teams on human-centred problem framing, guiding them to prototype inclusive solutions for sustainable development goals.</li>
+                            <li>Helped founders evaluate AI feasibility, recommending optimal stacks and experimentation strategies to de-risk early-stage ideas.</li>
+                            <li>Built a collaborative learning culture that empowered participants to iterate rapidly and present investor-ready concepts in under 48 hours.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__heading">
+                    <span class="section__eyebrow">Selected work</span>
+                    <h2 class="section__title">Projects & Platforms</h2>
+                    <p class="section__description">Research-infused builds that prove the art of the possible and scale into production-grade ecosystems.</p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="project-card glass-panel reveal">
+                        <div class="project-card__chip">Mobility Intelligence</div>
+                        <h3 class="project-card__title">Smart Mobility Command Center</h3>
+                        <p class="project-card__description">A computer-vision parking orchestration layer unifying camera feeds, OCR, and predictive analytics to optimise urban capacity.</p>
+                        <ul class="project-card__list">
+                            <li>TensorFlow deep learning services for vehicle and license-plate recognition.</li>
+                            <li>Apache Kafka + AWS streaming pipeline for high-velocity sensor fusion.</li>
+                            <li>Adaptive optimisation loop cutting average search time by 28%.</li>
+                        </ul>
+                        <ul class="chip-list">
+                            <li>TensorFlow</li>
+                            <li>OpenCV</li>
+                            <li>AWS</li>
+                            <li>OCR</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card glass-panel reveal">
+                        <div class="project-card__chip">Cybersecurity</div>
+                        <h3 class="project-card__title">Network Anomaly Radar</h3>
+                        <p class="project-card__description">A streaming ML pipeline that flags malicious behaviour across enterprise networks with explainable insights for SOC teams.</p>
+                        <ul class="project-card__list">
+                            <li>Feature-engineered traffic telemetry to highlight rare, high-risk events.</li>
+                            <li>Tree-based ensembles with automated hyperparameter tuning and drift monitoring.</li>
+                            <li>Achieved a 95% detection recall while minimising analyst alert fatigue.</li>
+                        </ul>
+                        <ul class="chip-list">
+                            <li>Scikit-learn</li>
+                            <li>Python</li>
+                            <li>Airflow</li>
+                            <li>Explainable AI</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card glass-panel reveal">
+                        <div class="project-card__chip">Urban Analytics</div>
+                        <h3 class="project-card__title">Traffic Flow Foresight</h3>
+                        <p class="project-card__description">A hybrid modelling engine blending Python and MATLAB to predict congestion patterns and re-route fleets in real time.</p>
+                        <ul class="project-card__list">
+                            <li>Fused time-series forecasting with simulation modelling for dynamic routing.</li>
+                            <li>Deployed decision support dashboards enabling data-driven city planning.</li>
+                            <li>Delivered >90% accuracy on peak congestion forecasting benchmarks.</li>
+                        </ul>
+                        <ul class="chip-list">
+                            <li>Python</li>
+                            <li>MATLAB</li>
+                            <li>Forecasting</li>
+                            <li>Visualization</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__heading">
+                    <span class="section__eyebrow">Expertise</span>
+                    <h2 class="section__title">Skills & Tooling</h2>
+                    <p class="section__description">A multi-disciplinary toolkit forged across research labs, production systems, and collaborative innovation.</p>
+                </div>
+
+                <div class="skills__grid">
+                    <article class="skill-card glass-panel reveal">
+                        <h3>Programming</h3>
+                        <p>Fluent in building performant prototypes and scalable services.</p>
+                        <ul class="chip-list">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card glass-panel reveal">
+                        <h3>AI & ML Stack</h3>
+                        <p>Designing data workflows from experimentation to MLOps at scale.</p>
+                        <ul class="chip-list">
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>Keras</li>
+                            <li>Scikit-learn</li>
+                            <li>NLTK</li>
+                            <li>Hugging Face</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card glass-panel reveal">
+                        <h3>Data Insights</h3>
+                        <p>Transforming raw data into actionable intelligence and narratives.</p>
+                        <ul class="chip-list">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Data Storytelling</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card glass-panel reveal">
+                        <h3>Cloud & DevOps</h3>
+                        <p>Operationalising resilient systems with modern infrastructure patterns.</p>
+                        <ul class="chip-list">
+                            <li>AWS</li>
+                            <li>Google Cloud</li>
+                            <li>Docker</li>
+                            <li>Git & GitHub</li>
+                            <li>CI/CD</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card glass-panel reveal">
+                        <h3>Leadership</h3>
+                        <p>Championing inclusive collaboration, storytelling, and rapid learning.</p>
+                        <ul class="chip-list">
+                            <li>Technical Mentorship</li>
+                            <li>Stakeholder Alignment</li>
+                            <li>Design Thinking</li>
+                            <li>Cross-functional Facilitation</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section__heading">
+                    <span class="section__eyebrow">Learning</span>
+                    <h2 class="section__title">Education & Research</h2>
+                    <p class="section__description">Academic explorations that ground my craft in rigorous methodology and curiosity.</p>
+                </div>
+
+                <div class="education__grid">
+                    <article class="edu-card glass-panel reveal">
+                        <h3>Master of Science · Artificial Intelligence</h3>
+                        <span class="edu-card__meta">Illinois Institute of Technology · Chicago, IL · Aug 2022 – Present</span>
+                        <p>Deepening expertise across machine learning, deep learning, NLP, computer vision, and social network analysis while leading cross-campus innovation initiatives.</p>
+                        <ul class="chip-list">
+                            <li>Disease spread modelling</li>
+                            <li>Image recognition</li>
+                            <li>Sentiment analysis</li>
+                        </ul>
+                    </article>
+
+                    <article class="edu-card glass-panel reveal">
+                        <h3>Bachelor of Engineering · Computer</h3>
+                        <span class="edu-card__meta">Jayawantrao Sawant College of Engineering · Pune, India · Aug 2018 – Jun 2021</span>
+                        <p>Comprehensive foundation across algorithms, networks, databases, operating systems, and applied machine learning with a focus on intelligent transport systems.</p>
+                        <ul class="chip-list">
+                            <li>Traffic prediction capstone</li>
+                            <li>Systems design</li>
+                            <li>Data structures</li>
+                        </ul>
+                    </article>
+
+                    <article class="edu-card glass-panel reveal">
+                        <h3>Diploma · Computer Engineering</h3>
+                        <span class="edu-card__meta">MGM Polytechnic · Chhatrapati Sambhajinagar, India · Jun 2015 – Mar 2018</span>
+                        <p>Launched my journey with a focus on software craftsmanship, embedded systems, and collaborative project delivery.</p>
+                        <ul class="chip-list">
+                            <li>Embedded systems</li>
+                            <li>Collaborative labs</li>
+                            <li>Foundational coding</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="research glass-panel reveal">
+                    <h3>Research Publications</h3>
+                    <ul class="research__list">
+                        <li>“Smart Helmet Using Natural Language Processing, Head Mounted Display and Solar Panel” — Scopus indexed journal.</li>
+                        <li>“Artificial Intelligence to Transform Parking Industry” — exploring urban mobility innovation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__panel glass-panel reveal">
+                    <span class="section__eyebrow">Collaborate</span>
+                    <h2 class="section__title">Let’s architect the next intelligent experience</h2>
+                    <p class="section__description">Whether you’re shaping autonomous mobility, safeguarding infrastructure, or launching AI-powered products, I’d love to explore how we can move faster together.</p>
+
+                    <div class="contact__actions">
+                        <a href="mailto:srajput2@hawk.iit.edu" class="button button--primary" aria-label="Email Saurabh Rajput">Email me</a>
+                        <a href="tel:+13124041275" class="button button--ghost" aria-label="Call Saurabh Rajput">Call +1 (312) 404-1275</a>
+                    </div>
+
+                    <div class="contact__links">
+                        <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" target="_blank" rel="noreferrer">
+                            <i class="uil uil-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Saurabh24k" target="_blank" rel="noreferrer">
+                            <i class="uil uil-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="assets/pdf/Saurabh Rajput.pdf" download>
+                            <i class="uil uil-file-download"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p>© <span id="current-year"></span> Saurabh Rajput. Crafted with curiosity and a love for glassmorphism.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-48Z1tcHTTX3e8DqRLVQjaxAg/P6nxsVXni4eWh05rq6ArtyTc95H8333Adxpv8uKXuX4nHCqB6f+GO6zkRgL7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-dO0Hj7FVGHvXZHzVvzJeY9q24apqYh6gMPkTFogyXv3gZH/BqhGlywbn4T/6QAEyy6AdZkGouVp21Hb+JsebNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

@@ -1,175 +1,151 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+const body = document.body;
+const html = document.documentElement;
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
+const navLinks = Array.from(document.querySelectorAll('.nav__link'));
+const header = document.getElementById('header');
+const themeToggle = document.getElementById('theme-toggle');
+const currentYearEl = document.getElementById('current-year');
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-        navToggle.style.display = 'none'; // Hide the navToggle button
-        if(navClose) navClose.style.display = 'flex'; // Show the navClose button
-    })
-}
+const openMenu = () => {
+  if (!navMenu) return;
+  navMenu.classList.add('show-menu');
+  body?.classList.add('menu-open');
+};
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-        if(navToggle) navToggle.style.display = 'flex'; // Show the navToggle button
-        navClose.style.display = 'none'; // Hide the navClose button
-    })
-}
+const closeMenu = () => {
+  if (!navMenu) return;
+  navMenu.classList.remove('show-menu');
+  body?.classList.remove('menu-open');
+};
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+navToggle?.addEventListener('click', openMenu);
+navClose?.addEventListener('click', closeMenu);
+navLinks.forEach((link) => link.addEventListener('click', closeMenu));
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-    navClose.style.display = 'none'; // Assuming you want to hide the close button on mobile after selection
-    navToggle.style.display = 'flex'; // Ensure navToggle is visible again on mobile after selecting a menu item
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-      skillsHeader = document.querySelectorAll('.skills__header')
-
-function toggleSkills(){
-    let itemClass = this.parentNode.className
-
-    for(i = 0; i < skillsContent.length; i++){
-        skillsContent[i].className = 'skills__content skills__close'
-    }
-    if(itemClass === 'skills__content skills__close'){
-        this.parentNode.className = 'skills__content skills__open'
-    }
-}
-
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
-})
-
-/*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]');
-
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target);
-
-        // Remove 'qualification__active' class from all tab contents
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('qualification__active');
-        });
-        // Add 'qualification__active' class to the targeted tab content
-        target.classList.add('qualification__active');
-
-        // Remove 'qualification__active' class from all tabs
-        tabs.forEach(t => {
-            t.classList.remove('qualification__active');
-        });
-        // Add 'qualification__active' class back to the clicked tab
-        tab.classList.add('qualification__active');
-    });
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeMenu();
+  }
 });
 
+window.addEventListener('scroll', () => {
+  if (!header) return;
+  header.classList.toggle('header--scrolled', window.scrollY > 12);
+});
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.projects__modal'),
-      modalBtns = document.querySelectorAll('.projects__button'),
-      modalCloses = document.querySelectorAll('.projects__modal-close')
-
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
+if (header) {
+  header.classList.toggle('header--scrolled', window.scrollY > 12);
 }
 
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () =>{
-        modal(i)
-    })
-})
-    
-modalCloses.forEach((modalClose) =>{
-    modalClose.addEventListener('click', () =>{
-        modalViews.forEach((modalView) =>{
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
-/*==================== PORTFOLIO SWIPER  ====================*/
+const sections = document.querySelectorAll('section[id]');
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const activeLink = document.querySelector(`.nav__link[href="#${entry.target.id}"]`);
+      if (!activeLink) return;
+      navLinks.forEach((link) => link.classList.remove('active-link'));
+      activeLink.classList.add('active-link');
+    });
+  },
+  {
+    rootMargin: '-30% 0px -45% 0px',
+    threshold: 0.35,
+  }
+);
 
+sections.forEach((section) => sectionObserver.observe(section));
 
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-function scrollHeader(){
-    const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
-
-/*==================== SHOW SCROLL UP ====================*/ 
-function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollUp)
-
-/*==================== DARK LIGHT THEME ====================*/ 
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
-
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+if (navLinks.length > 0) {
+  navLinks[0].classList.add('active-link');
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+const themeStorageKey = 'saurabh-theme';
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+const setTheme = (theme, persist = false) => {
+  body?.setAttribute('data-theme', theme);
+  html?.setAttribute('data-theme', theme);
+  if (persist) {
+    localStorage.setItem(themeStorageKey, theme);
+  }
+  if (themeToggle) {
+    const icon = themeToggle.querySelector('i');
+    if (icon) {
+      icon.className = theme === 'dark' ? 'uil uil-sun' : 'uil uil-moon';
+    }
+    themeToggle.setAttribute('aria-label', `Activate ${theme === 'dark' ? 'light' : 'dark'} theme`);
+  }
+};
+
+const storedTheme = localStorage.getItem(themeStorageKey);
+if (storedTheme) {
+  setTheme(storedTheme);
+} else {
+  setTheme(prefersDark.matches ? 'dark' : 'light');
+}
+
+prefersDark.addEventListener('change', (event) => {
+  if (!localStorage.getItem(themeStorageKey)) {
+    setTheme(event.matches ? 'dark' : 'light');
+  }
+});
+
+themeToggle?.addEventListener('click', () => {
+  const currentTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  setTheme(currentTheme, true);
+});
+
+if (currentYearEl) {
+  currentYearEl.textContent = new Date().getFullYear().toString();
+}
+
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const revealElements = document.querySelectorAll('.reveal');
+
+if (prefersReducedMotion.matches) {
+  revealElements.forEach((element) => element.classList.add('is-visible'));
+} else if (window.gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const introTimeline = gsap.timeline({ defaults: { ease: 'power3.out', duration: 1 } });
+  introTimeline
+    .from('.nav__logo', { y: -20, opacity: 0 })
+    .from('.nav__list li', { y: -20, opacity: 0, stagger: 0.08 }, '-=0.6')
+    .from('.hero__eyebrow', { y: 20, opacity: 0 }, '-=0.4')
+    .from('.hero__title', { y: 30, opacity: 0 }, '-=0.5')
+    .from('.hero__description', { y: 30, opacity: 0 }, '-=0.5')
+    .from('.hero__actions', { y: 20, opacity: 0 }, '-=0.5')
+    .from('.hero__social', { y: 20, opacity: 0 }, '-=0.6')
+    .from('.hero__stats .hero__stat', { y: 30, opacity: 0, stagger: 0.12 }, '-=0.6')
+    .from('.hero__media', { x: 40, opacity: 0, duration: 1 }, '-=0.8');
+
+  gsap.utils.toArray('.reveal').forEach((element) => {
+    gsap.from(element, {
+      opacity: 0,
+      y: 60,
+      duration: 1.1,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 85%',
+        toggleActions: 'play none none reverse',
+      },
+    });
+  });
+} else {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+}
