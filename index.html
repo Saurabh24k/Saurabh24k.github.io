@@ -1,373 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saurabh Rajput is a Chicago-based Artificial Intelligence Engineer building glassmorphic intelligent experiences across mobility, cybersecurity, and urban infrastructure.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saurabh Rajput is a Chicago-based Artificial Intelligence Engineer crafting responsive AI systems across mobility, safety, and urban infrastructure."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Saurabh Rajput — AI Engineer Portfolio</title>
-</head>
-<body data-theme="dark">
-    <div class="background-layers" aria-hidden="true">
-        <div class="gradient gradient--one"></div>
-        <div class="gradient gradient--two"></div>
-        <div class="gradient gradient--three"></div>
-        <div class="floating-orb floating-orb--one"></div>
-        <div class="floating-orb floating-orb--two"></div>
-        <div class="floating-orb floating-orb--three"></div>
-    </div>
-
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#home" class="nav__logo">Sau24k</a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li><a class="nav__link" href="#home">Home</a></li>
-                    <li><a class="nav__link" href="#experience">Experience</a></li>
-                    <li><a class="nav__link" href="#projects">Projects</a></li>
-                    <li><a class="nav__link" href="#skills">Skills</a></li>
-                    <li><a class="nav__link" href="#education">Education</a></li>
-                    <li><a class="nav__link" href="#contact">Contact</a></li>
-                </ul>
-                <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation">
-                    <i class="uil uil-multiply"></i>
-                </button>
-            </div>
-
-            <div class="nav__actions">
-                <button class="nav__theme" id="theme-toggle" type="button" aria-label="Switch theme">
-                    <i class="uil uil-moon"></i>
-                </button>
-                <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation">
-                    <i class="uil uil-apps"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="hero section" id="home">
-            <div class="container hero__grid">
-                <div class="hero__content glass-panel reveal">
-                    <span class="hero__eyebrow">Artificial Intelligence Engineer</span>
-                    <h1 class="hero__title">Designing intelligent systems that amplify mobility, safety, and human experiences.</h1>
-                    <p class="hero__description">I’m Saurabh Rajput, a Chicago-based AI engineer translating research breakthroughs into resilient products. From smart parking ecosystems to anomaly detection pipelines, I architect cloud-native ML platforms that learn, adapt, and delight.</p>
-
-                    <div class="hero__actions">
-                        <a href="#contact" class="button button--primary">Let’s build together</a>
-                        <a href="assets/pdf/Saurabh Rajput.pdf" class="button button--ghost" download>Download resume</a>
-                    </div>
-
-                    <div class="hero__social">
-                        <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Saurabh24k" target="_blank" rel="noreferrer" aria-label="GitHub">
-                            <i class="uil uil-github"></i>
-                        </a>
-                        <a href="mailto:srajput2@hawk.iit.edu" aria-label="Email">
-                            <i class="uil uil-envelope"></i>
-                        </a>
-                    </div>
-
-                    <div class="hero__stats">
-                        <div class="hero__stat">
-                            <span class="hero__stat-value">10+</span>
-                            <span class="hero__stat-label">End-to-end products and prototypes delivered</span>
-                        </div>
-                        <div class="hero__stat">
-                            <span class="hero__stat-value">3+</span>
-                            <span class="hero__stat-label">Years building applied AI across mobility & cloud</span>
-                        </div>
-                        <div class="hero__stat">
-                            <span class="hero__stat-value">2</span>
-                            <span class="hero__stat-label">Peer-reviewed publications on AI innovation</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero__media reveal">
-                    <div class="hero__media-glass glass-panel">
-                        <img src="assets/img/perfil.png" alt="Portrait of Saurabh Rajput" class="hero__portrait">
-                        <span class="hero__badge">
-                            <i class="uil uil-robot"></i>
-                            <span>ML Ops • Vision • NLP</span>
-                        </span>
-                    </div>
-                    <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
-                    <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="experience section" id="experience">
-            <div class="container">
-                <div class="section__heading">
-                    <span class="section__eyebrow">Journey</span>
-                    <h2 class="section__title">Experience</h2>
-                    <p class="section__description">Solving high-impact problems with scalable AI, human-centred design, and collaborative leadership.</p>
-                </div>
-
-                <div class="experience__timeline">
-                    <article class="timeline-card glass-panel reveal">
-                        <div class="timeline-card__header">
-                            <h3>Artificial Intelligence Engineer</h3>
-                            <span class="timeline-card__company">Parkiez Mobility Pvt Ltd · Dec 2020 – Mar 2022</span>
-                            <span class="timeline-card__location">Pune, India · Hybrid</span>
-                        </div>
-                        <ul class="timeline-card__list">
-                            <li>Architected a smart parking intelligence suite powered by TensorFlow, OpenCV, and edge sensors, delivering live capacity forecasts for 30+ parking hubs.</li>
-                            <li>Orchestrated cloud-native deployments on AWS, automating pipelines with SageMaker, Lambda, and IoT Core to reduce operational overhead by 40%.</li>
-                            <li>Instituted CI/CD workflows with Jenkins and CodePipeline, accelerating experimentation cycles and production releases for the mobility platform.</li>
-                        </ul>
-                    </article>
-
-                    <article class="timeline-card glass-panel reveal">
-                        <div class="timeline-card__header">
-                            <h3>Tech Expert · Volunteer</h3>
-                            <span class="timeline-card__company">UNLEASH Innovation Lab for SDGs · Jun 2021</span>
-                            <span class="timeline-card__location">Remote · India</span>
-                        </div>
-                        <ul class="timeline-card__list">
-                            <li>Mentored hackathon teams on human-centred problem framing, guiding them to prototype inclusive solutions for sustainable development goals.</li>
-                            <li>Helped founders evaluate AI feasibility, recommending optimal stacks and experimentation strategies to de-risk early-stage ideas.</li>
-                            <li>Built a collaborative learning culture that empowered participants to iterate rapidly and present investor-ready concepts in under 48 hours.</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects section" id="projects">
-            <div class="container">
-                <div class="section__heading">
-                    <span class="section__eyebrow">Selected work</span>
-                    <h2 class="section__title">Projects & Platforms</h2>
-                    <p class="section__description">Research-infused builds that prove the art of the possible and scale into production-grade ecosystems.</p>
-                </div>
-
-                <div class="projects__grid">
-                    <article class="project-card glass-panel reveal">
-                        <div class="project-card__chip">Mobility Intelligence</div>
-                        <h3 class="project-card__title">Smart Mobility Command Center</h3>
-                        <p class="project-card__description">A computer-vision parking orchestration layer unifying camera feeds, OCR, and predictive analytics to optimise urban capacity.</p>
-                        <ul class="project-card__list">
-                            <li>TensorFlow deep learning services for vehicle and license-plate recognition.</li>
-                            <li>Apache Kafka + AWS streaming pipeline for high-velocity sensor fusion.</li>
-                            <li>Adaptive optimisation loop cutting average search time by 28%.</li>
-                        </ul>
-                        <ul class="chip-list">
-                            <li>TensorFlow</li>
-                            <li>OpenCV</li>
-                            <li>AWS</li>
-                            <li>OCR</li>
-                        </ul>
-                    </article>
-
-                    <article class="project-card glass-panel reveal">
-                        <div class="project-card__chip">Cybersecurity</div>
-                        <h3 class="project-card__title">Network Anomaly Radar</h3>
-                        <p class="project-card__description">A streaming ML pipeline that flags malicious behaviour across enterprise networks with explainable insights for SOC teams.</p>
-                        <ul class="project-card__list">
-                            <li>Feature-engineered traffic telemetry to highlight rare, high-risk events.</li>
-                            <li>Tree-based ensembles with automated hyperparameter tuning and drift monitoring.</li>
-                            <li>Achieved a 95% detection recall while minimising analyst alert fatigue.</li>
-                        </ul>
-                        <ul class="chip-list">
-                            <li>Scikit-learn</li>
-                            <li>Python</li>
-                            <li>Airflow</li>
-                            <li>Explainable AI</li>
-                        </ul>
-                    </article>
-
-                    <article class="project-card glass-panel reveal">
-                        <div class="project-card__chip">Urban Analytics</div>
-                        <h3 class="project-card__title">Traffic Flow Foresight</h3>
-                        <p class="project-card__description">A hybrid modelling engine blending Python and MATLAB to predict congestion patterns and re-route fleets in real time.</p>
-                        <ul class="project-card__list">
-                            <li>Fused time-series forecasting with simulation modelling for dynamic routing.</li>
-                            <li>Deployed decision support dashboards enabling data-driven city planning.</li>
-                            <li>Delivered >90% accuracy on peak congestion forecasting benchmarks.</li>
-                        </ul>
-                        <ul class="chip-list">
-                            <li>Python</li>
-                            <li>MATLAB</li>
-                            <li>Forecasting</li>
-                            <li>Visualization</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills section" id="skills">
-            <div class="container">
-                <div class="section__heading">
-                    <span class="section__eyebrow">Expertise</span>
-                    <h2 class="section__title">Skills & Tooling</h2>
-                    <p class="section__description">A multi-disciplinary toolkit forged across research labs, production systems, and collaborative innovation.</p>
-                </div>
-
-                <div class="skills__grid">
-                    <article class="skill-card glass-panel reveal">
-                        <h3>Programming</h3>
-                        <p>Fluent in building performant prototypes and scalable services.</p>
-                        <ul class="chip-list">
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>Java</li>
-                            <li>SQL</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card glass-panel reveal">
-                        <h3>AI & ML Stack</h3>
-                        <p>Designing data workflows from experimentation to MLOps at scale.</p>
-                        <ul class="chip-list">
-                            <li>TensorFlow</li>
-                            <li>PyTorch</li>
-                            <li>Keras</li>
-                            <li>Scikit-learn</li>
-                            <li>NLTK</li>
-                            <li>Hugging Face</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card glass-panel reveal">
-                        <h3>Data Insights</h3>
-                        <p>Transforming raw data into actionable intelligence and narratives.</p>
-                        <ul class="chip-list">
-                            <li>Pandas</li>
-                            <li>NumPy</li>
-                            <li>Matplotlib</li>
-                            <li>Data Storytelling</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card glass-panel reveal">
-                        <h3>Cloud & DevOps</h3>
-                        <p>Operationalising resilient systems with modern infrastructure patterns.</p>
-                        <ul class="chip-list">
-                            <li>AWS</li>
-                            <li>Google Cloud</li>
-                            <li>Docker</li>
-                            <li>Git & GitHub</li>
-                            <li>CI/CD</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card glass-panel reveal">
-                        <h3>Leadership</h3>
-                        <p>Championing inclusive collaboration, storytelling, and rapid learning.</p>
-                        <ul class="chip-list">
-                            <li>Technical Mentorship</li>
-                            <li>Stakeholder Alignment</li>
-                            <li>Design Thinking</li>
-                            <li>Cross-functional Facilitation</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="education section" id="education">
-            <div class="container">
-                <div class="section__heading">
-                    <span class="section__eyebrow">Learning</span>
-                    <h2 class="section__title">Education & Research</h2>
-                    <p class="section__description">Academic explorations that ground my craft in rigorous methodology and curiosity.</p>
-                </div>
-
-                <div class="education__grid">
-                    <article class="edu-card glass-panel reveal">
-                        <h3>Master of Science · Artificial Intelligence</h3>
-                        <span class="edu-card__meta">Illinois Institute of Technology · Chicago, IL · Aug 2022 – Present</span>
-                        <p>Deepening expertise across machine learning, deep learning, NLP, computer vision, and social network analysis while leading cross-campus innovation initiatives.</p>
-                        <ul class="chip-list">
-                            <li>Disease spread modelling</li>
-                            <li>Image recognition</li>
-                            <li>Sentiment analysis</li>
-                        </ul>
-                    </article>
-
-                    <article class="edu-card glass-panel reveal">
-                        <h3>Bachelor of Engineering · Computer</h3>
-                        <span class="edu-card__meta">Jayawantrao Sawant College of Engineering · Pune, India · Aug 2018 – Jun 2021</span>
-                        <p>Comprehensive foundation across algorithms, networks, databases, operating systems, and applied machine learning with a focus on intelligent transport systems.</p>
-                        <ul class="chip-list">
-                            <li>Traffic prediction capstone</li>
-                            <li>Systems design</li>
-                            <li>Data structures</li>
-                        </ul>
-                    </article>
-
-                    <article class="edu-card glass-panel reveal">
-                        <h3>Diploma · Computer Engineering</h3>
-                        <span class="edu-card__meta">MGM Polytechnic · Chhatrapati Sambhajinagar, India · Jun 2015 – Mar 2018</span>
-                        <p>Launched my journey with a focus on software craftsmanship, embedded systems, and collaborative project delivery.</p>
-                        <ul class="chip-list">
-                            <li>Embedded systems</li>
-                            <li>Collaborative labs</li>
-                            <li>Foundational coding</li>
-                        </ul>
-                    </article>
-                </div>
-
-                <div class="research glass-panel reveal">
-                    <h3>Research Publications</h3>
-                    <ul class="research__list">
-                        <li>“Smart Helmet Using Natural Language Processing, Head Mounted Display and Solar Panel” — Scopus indexed journal.</li>
-                        <li>“Artificial Intelligence to Transform Parking Industry” — exploring urban mobility innovation.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="contact__panel glass-panel reveal">
-                    <span class="section__eyebrow">Collaborate</span>
-                    <h2 class="section__title">Let’s architect the next intelligent experience</h2>
-                    <p class="section__description">Whether you’re shaping autonomous mobility, safeguarding infrastructure, or launching AI-powered products, I’d love to explore how we can move faster together.</p>
-
-                    <div class="contact__actions">
-                        <a href="mailto:srajput2@hawk.iit.edu" class="button button--primary" aria-label="Email Saurabh Rajput">Email me</a>
-                        <a href="tel:+13124041275" class="button button--ghost" aria-label="Call Saurabh Rajput">Call +1 (312) 404-1275</a>
-                    </div>
-
-                    <div class="contact__links">
-                        <a href="https://www.linkedin.com/in/saurabh-rajput-24k/" target="_blank" rel="noreferrer">
-                            <i class="uil uil-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/Saurabh24k" target="_blank" rel="noreferrer">
-                            <i class="uil uil-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="assets/pdf/Saurabh Rajput.pdf" download>
-                            <i class="uil uil-file-download"></i>
-                            <span>Resume</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer__content">
-            <p>© <span id="current-year"></span> Saurabh Rajput. Crafted with curiosity and a love for glassmorphism.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-48Z1tcHTTX3e8DqRLVQjaxAg/P6nxsVXni4eWh05rq6ArtyTc95H8333Adxpv8uKXuX4nHCqB6f+GO6zkRgL7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-dO0Hj7FVGHvXZHzVvzJeY9q24apqYh6gMPkTFogyXv3gZH/BqhGlywbn4T/6QAEyy6AdZkGouVp21Hb+JsebNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+  </head>
+  <body data-theme="dark">
+    <div id="root"></div>
+    <script>
+      (function () {
+        try {
+          const stored = localStorage.getItem("saurabh-theme");
+          const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = stored === "light" || stored === "dark" ? stored : prefersDark ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          document.body.setAttribute("data-theme", theme);
+        } catch (error) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" data-presets="react" src="assets/js/app.jsx"></script>
+  </body>
 </html>
